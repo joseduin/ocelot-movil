@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--
+        <item
+            android:id="@+id/menu_servicios"
+            android:icon="@drawable/ic_list"
+            android:title="Mis Servicios" />
+-->
+        <item
+            android:id="@+id/menu_catalogo"
+            android:icon="@drawable/ic_list"
+            android:title="@string/catalogo_servicios" />
+
+        <item
+            android:id="@+id/menu_catalogoPromociones"
+            android:icon="@drawable/ic_star"
+            android:title="@string/promociones" />
+
+        <item
+            android:id="@+id/menu_buzon"
+            android:icon="@drawable/ic_markunread_mailbox"
+            android:title="Buzon de Sugerencias" />
+        <item
+            android:id="@+id/menu_notificaciones"
+            android:icon="@drawable/ic_notifications_active"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/menu_cerrar"
+            android:icon="@drawable/ic_lock"
+            android:title="Cerrar Sesión" />
+    </group>
+
+    <!--
+    <item android:title="Preguntas Frecuentes">
+        <menu>
+            <item
+                android:id="@+id/menu_garantia"
+                android:icon="@drawable/ic_thumbs_up_down"
+                android:title="Cobertura de Garantia" />
+
+        </menu>
+    </item>
+    -->
+
+</menu>

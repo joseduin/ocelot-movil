@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ocelot.app.ValoracionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/barValoracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarValoracion"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/barValoracion"
+            android:layout_marginLeft="@dimen/margen_horizontal"
+            android:layout_marginRight="@dimen/margen_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Tiempo -->
+            <RelativeLayout
+                android:id="@+id/valorarTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/titulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:id="@+id/tituloTiempo"
+                    android:text="Tiempo del Servicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/tituloTiempo"
+                    style="@style/subtitulo"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:text="¿Considera usted que el tiempo de atención fue oportuno?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <GridLayout
+                    android:columnCount="5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/tiempo1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/tiempo2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/tiempo3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_neutral"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/tiempo4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_satisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/tiempo5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_satisfied"/>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <!-- /Tiempo -->
+
+            <!-- Calidad -->
+            <RelativeLayout
+                android:id="@+id/valorarCalidad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/titulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:id="@+id/tituloCalidad"
+                    android:text="Calidad del Servicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/tituloCalidad"
+                    style="@style/subtitulo"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:text="¿Esta usted satisfecho con el servicio prestado?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <GridLayout
+                    android:columnCount="5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/calidad1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/calidad2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/calidad3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_neutral"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/calidad4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_satisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/calidad5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_satisfied"/>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <!-- /Calidad -->
+
+            <!-- Precio -->
+            <RelativeLayout
+                android:id="@+id/valorarPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/titulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:id="@+id/tituloPrecio"
+                    android:text="Precio del Servicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/tituloPrecio"
+                    style="@style/subtitulo"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:text="¿Considera usted que el precio reflejado por el servicio es justo?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <GridLayout
+                    android:columnCount="5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/precio1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/precio2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_dissatisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/precio3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_neutral"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/precio4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_satisfied"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/precio5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:color/darker_gray"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        app:siShape="@drawable/ic_sentiment_very_satisfied"/>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <!-- /Precio -->
+
+            <!-- Opinion -->
+            <RelativeLayout
+                android:id="@+id/valorarOpinion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/titulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:id="@+id/tituloOpinion"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/tituloOpinion"
+                    style="@style/subtitulo"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:text="Dinos un poco más sobre su experiencia con el servicio prestado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    style="@style/textMultiLine"
+                    android:id="@+id/campo_opinion"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <!-- /Opinion -->
+
+        </RelativeLayout>
+
+        <Button
+            style="@style/botonPrincipal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/terminarValoracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terminar" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

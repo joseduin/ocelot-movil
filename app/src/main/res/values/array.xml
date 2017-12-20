@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Insatisfaccion por el resultado</item>
+        <item>Incumplimiento con las pautas del contrato</item>
+        <item>Servicio inadecuado</item>
+
+    </string-array>
+
+    <string-array name="opciones1">
+        <item>Insatisfaccion por el resultado</item>
+        <item>Incumplimiento con las pautas del contrato</item>
+        <item>Servicio inadecuado</item>
+
+    </string-array>
+
+</resources>

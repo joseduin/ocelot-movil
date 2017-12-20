@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "901729729565",
+    "firebase_url": "https://fox-hound-1ab1b.firebaseio.com",
+    "project_id": "fox-hound-1ab1b",
+    "storage_bucket": "fox-hound-1ab1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901729729565:android:996bd2260d538d34",
+        "android_client_info": {
+          "package_name": "ocelot.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901729729565-gkpasl8vssonpq06qafuq0q25rqj6aap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDazvf_XUTlZ6-2URUBwsbM81qAf9_2ooc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

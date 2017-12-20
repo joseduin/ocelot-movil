@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ocelot.app.RegistrarReclamoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/barReclamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarReclamo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/barReclamo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margen_horizontal"
+                android:layout_marginRight="@dimen/margen_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tipoR"
+                    style="@style/subtitulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipoR"/>
+
+                <Spinner
+                    android:id="@+id/sp02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/motivoR"
+                    style="@style/subtitulo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/motivoR" />
+
+                <Spinner
+                    android:id="@+id/sp01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_detalleReclamo"
+                    android:layout_marginTop="@dimen/margen_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/campo_nombre"
+                        style="@style/textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Detalles del Reclamo"
+                        android:inputType="textMultiLine" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--
+                   <TextView
+                       android:id="@+id/ordenEntrega"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/ordenEntrega"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintHorizontal_bias="1.0"
+                       android:textSize="15dp"
+                       app:layout_constraintVertical_bias="0.032" />
+               -->
+
+                <!--
+                    <TextView
+                        android:id="@+id/ordenE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ordenE"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias="0.885"
+                        android:textSize="15dp"
+                        app:layout_constraintVertical_bias="0.068" />
+                -->
+                <!--
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="53dp"
+                        android:layout_height="58dp"
+                        app:srcCompat="@drawable/reclamo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias="0.58"
+                        app:layout_constraintVertical_bias="0.013" />
+                -->
+
+                <!--
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="69dp"
+                        android:layout_height="66dp"
+                        app:srcCompat="@drawable/article"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintVertical_bias="0.272" />
+                -->
+                <!--
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="59dp"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/reclamos2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049" />
+                -->
+                <!--
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="306dp"
+                    android:layout_height="54dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Escriba aqui el motivo del reclamo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.767"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp" />
+-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout">
+
+                <Button
+                    style="@style/botonPrincipal"
+                    android:id="@+id/guardarReclamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+                <Button
+                    style="@style/botonSecundario"
+                    android:id="@+id/cancelarReclamo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancelar" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

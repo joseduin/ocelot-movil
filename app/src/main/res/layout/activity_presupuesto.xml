@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ocelot.app.PresupuestoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barPresupuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarPresupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/barPresupuesto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/margen_horizontal"
+            android:layout_marginLeft="@dimen/margen_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margen_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/subtitulo"
+                    android:text="@string/presupuesto"
+                    android:layout_marginRight="@dimen/margen_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/presupuestonro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nropresupuesto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margen_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/subtitulo"
+                    android:text="@string/fechaP"
+                    android:layout_marginRight="@dimen/margen_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fechaE" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/membrete"
+                style="@style/subtitulo"
+                android:layout_marginTop="@dimen/margen_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/membrete" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margen_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/icono"
+                    android:layout_height="@dimen/icono"
+                    android:src="@drawable/ic_location_on" />
+
+                <TextView
+                    android:id="@+id/lugarvisita"
+                    android:layout_marginLeft="@dimen/margen_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/informacion" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margen_horizontal"
+                android:layout_marginBottom="@dimen/margen_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/icono"
+                    android:layout_height="@dimen/icono"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_marginLeft="@dimen/margen_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/informacion_telfono" />
+
+            </LinearLayout>
+
+            <GridLayout
+                android:columnCount="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Servicio" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Precio Base" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Área" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Total (Bs)" />
+
+                <TextView
+                    android:id="@+id/servicio"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jardineía" />
+
+                <TextView
+                    android:id="@+id/precio"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="100.000 x mts2" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="20" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="2.000.000" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pintura" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="100.000 x mts2" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="20" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="2.000.000" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorNegro"
+                    android:layout_columnSpan="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Sub Total" />
+
+                <TextView
+                    android:id="@+id/subtotal"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="4.000.000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Total" />
+
+                <TextView
+                    android:id="@+id/totalpagar"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="4.000.000" />
+
+            </GridLayout>
+
+            <!--
+                <TextView
+                    android:id="@+id/informacion2"
+                    android:layout_width="174dp"
+                    android:layout_height="85dp"
+                    android:text="@string/informacion2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="15dp"
+                    app:layout_constraintVertical_bias="0.319"
+                    android:layout_marginRight="7dp" />
+            -->
+
+
+
+
+            <!--
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            app:srcCompat="@drawable/reclamo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintVertical_bias="0.0" />
+    -->
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <Button
+                style="@style/botonPrincipal"
+                android:id="@+id/confirmarPresupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirmar" />
+
+            <Button
+                style="@style/botonSecundario"
+                android:id="@+id/rechazarPresupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rechazar" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

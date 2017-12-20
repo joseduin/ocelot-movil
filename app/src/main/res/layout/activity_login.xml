@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/colorPrimaryDark"
+    tools:context="ocelot.app.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_marginTop="@dimen/loginMargenHorizontal"
+            android:layout_marginLeft="@dimen/loginMargenHorizontal"
+            android:id="@+id/inicioRegresar"
+            style="@style/botonPrincipal"
+            android:layout_width="@dimen/icono"
+            android:layout_height="@dimen/icono"
+            app:srcCompat="@drawable/ic_chevron_left" />
+
+        <TextView
+            android:textSize="@dimen/tituloLogin"
+            android:layout_marginTop="@dimen/loginMargenTop"
+            android:textColor="@color/colorNube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tituloLogin"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/loginMargenHorizontal"
+                    android:layout_marginRight="@dimen/loginMargenHorizontal"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/loginPaddingHorizontal"
+                        android:paddingLeft="@dimen/loginPaddingHorizontal"
+                        android:paddingRight="@dimen/loginPaddingHorizontal"
+                        android:paddingTop="@dimen/loginPaddingTop">
+
+                        <LinearLayout
+                            android:id="@+id/area_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_cliente"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_account_box" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/til_nombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="32dp">
+
+                                <EditText
+                                    android:id="@+id/campo_nombre"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="@string/usuarioLogin"
+                                    android:inputType="textEmailAddress" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_lock" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayoutClave"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="32dp">
+
+                                <EditText
+                                    android:id="@+id/campoClave"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="@string/claveLogin"
+                                    android:inputType="textPassword"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.dd.processbutton.iml.ActionProcessButton
+                            android:id="@+id/btnSignIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/tituloLogin"
+                            android:textColor="@color/colorBlanco"
+                            android:textSize="18sp"
+                            custom:pb_colorComplete="@color/colorPrimaryDark"
+                            custom:pb_colorError="@color/colorAccent"
+                            custom:pb_colorNormal="@color/colorPrimary"
+                            custom:pb_colorPressed="@color/colorPrimaryDark"
+                            custom:pb_colorProgress="@color/purple_progress"
+                            custom:pb_textComplete="@string/bienvenido"
+                            custom:pb_textError="@string/tituloLogin"
+                            custom:pb_textProgress="@string/autentificarInicio" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_gravity="top|center_horizontal"
+                android:layout_width="@dimen/iconoLogin"
+                android:layout_height="@dimen/iconoLogin"
+                android:src="@drawable/ic_account_circle2"
+                app:civ_border_color="@color/colorBlanco"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="#42000000"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
